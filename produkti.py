@@ -5,7 +5,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import re
 import time
-#regex_pattern: Regulārā izteiksme, kas nosaka, kā izskatās cena.
 
 def iegut_cenu_ar_regex(url, regex_pattern, nosaukums):
     service = Service('./chromedriver')
@@ -27,7 +26,6 @@ def iegut_cenu_ar_regex(url, regex_pattern, nosaukums):
     except:
         pass
 
-# Iegūst visu HTML (lapas saturu kā tekstu).
 
     html = driver.page_source
     driver.quit()
@@ -40,7 +38,6 @@ def iegut_cenu_ar_regex(url, regex_pattern, nosaukums):
         except ValueError:
             raise Exception(f"Nepareizs cenas formāts lapā ({nosaukums}): '{cena_raw}'")
 
-# Pārbauda vai cena nav 0.0 (bieži kļūda, nevis reāla cena)
         if cena == 0.0:
             raise Exception(f"Nederīga cena (0.0) lapā ({nosaukums})")
 
@@ -51,7 +48,6 @@ def iegut_cenu_ar_regex(url, regex_pattern, nosaukums):
 if __name__ == '__main__':
     start_time = time.time()
 
-    # Uzlabots regex, kas uzticami atrod cenas ar € simbolu
     regex = r'>(\d{1,4}(?:[\s.,]\d{2})) *€<'
 
     produkti = [
