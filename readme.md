@@ -1,8 +1,8 @@
-# 🖥️ Datora Komponentu Cenu Salīdzinātājs
+#  Datora Komponentu Cenu Salīdzinātājs
 
 Darba autors: Kristers Balcers 241RDC013
 
-## 💡 Projekta mērķis
+##  Projekta mērķis
 
 Šī Python skripta mērķis ir atvieglot datora komponentu cenu pārbaudi internetā, automātiski salīdzinot cenas divos populāros Latvijas interneta veikalos: 1a.lv un aio.lv.
 
@@ -10,7 +10,7 @@ Plānojot būvēt jaunu datoru, skripts ļauj izvairīties no ikdienas manuālas
 
 ---
 
-## ⚙️ Kā tas strādā
+##  Kā tas strādā
 
 - Katram produktam (`Mātesplate`, `Procesors`, `Videokarte`, `RAM`, `Barošanas bloks`) ir definētas saites uz `1a.lv` un `aio.lv`.
 - Skripts izmanto Selenium WebDriver, lai ielādētu šīs lapas.
@@ -23,14 +23,14 @@ Plānojot būvēt jaunu datoru, skripts ļauj izvairīties no ikdienas manuālas
 
 ---
 
-## 🧰 Prasības
+##  Prasības
 
 - Python 3.7+
 - Google Chrome pārlūks
 - [ChromeDriver](https://chromedriver.chromium.org/downloads) atbilstošai pārlūka versijai
 - Python bibliotēka: `selenium`
 
-### 📦 Instalācija
+###  Instalācija
 
 ```bash
 pip install selenium
@@ -38,7 +38,7 @@ pip install selenium
 
 ------------------------
 
-🧠 Iespējamie uzlabojumi
+ Iespējamie uzlabojumi
 CSV/Excel rezultātu eksports
 
 Automātiskas e-pasta paziņojumu integrācija
