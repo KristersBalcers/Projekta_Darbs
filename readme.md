@@ -30,7 +30,14 @@ Plānojot būvēt jaunu datoru, skripts ļauj izvairīties no ikdienas manuālas
 - [ChromeDriver](https://chromedriver.chromium.org/downloads) atbilstošai pārlūka versijai
 - Python bibliotēka: `selenium`
 
-###  Instalācija
+### Iespējamie uzlabojumi
+CSV/Excel rezultātu eksports
+
+Automātiskas e-pasta paziņojumu integrācija
+
+Vairāku veikalu paplašināšana (RD Electronics, Dateks u.c.)
+
+####  Instalācija
 
 ```bash
 pip install selenium
@@ -38,9 +45,3 @@ pip install selenium
 
 ------------------------
 
- Iespējamie uzlabojumi
-CSV/Excel rezultātu eksports
-
-Automātiskas e-pasta paziņojumu integrācija
-
-Vairāku veikalu paplašināšana (RD Electronics, Dateks u.c.)
